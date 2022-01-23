@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 version: '3'
 
 services:
@@ -8,3 +9,15 @@ services:
       - ${SSH_CLI_PORT}:${SSH_HOST_PORT}
     volumes:
       - ./home:/home
+=======
+version: '3'
+
+services:
+  ssh:
+    container_name: ssh
+    image: rastasheep/ubuntu-sshd
+    ports:
+      - ${SSH_CLI_PORT}:${SSH_HOST_PORT}
+    volumes:
+      - ./home:/home
+>>>>>>> a426eca87f2e51c833015759247d81550335fcda
